@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConnectionHistory", "ConnectionHistory.vcxproj", "{F26097DF-91C5-49D0-A20C-D0B93D4A9814}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26097DF-91C5-49D0-A20C-D0B93D4A9814}.Debug|x64.ActiveCfg = Debug|x64
+		{F26097DF-91C5-49D0-A20C-D0B93D4A9814}.Debug|x64.Build.0 = Debug|x64
+		{F26097DF-91C5-49D0-A20C-D0B93D4A9814}.Release|x64.ActiveCfg = Release|x64
+		{F26097DF-91C5-49D0-A20C-D0B93D4A9814}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9B19888-3D36-4344-A761-8F0422798185}
+	EndGlobalSection
+EndGlobal
