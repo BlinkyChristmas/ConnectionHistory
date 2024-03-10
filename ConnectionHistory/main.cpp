@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
                 auto history = connectionStatus[clientName] ;
                 auto count = history.size() ;
                 std::cout << "There are " << count << " entries for: " << clientName << std::endl;
-                for (auto i = count -1; i >= 0; i -= 1 ) {
+                for (auto i = 0; i < count;i++) {
                     std::cout << "\t" <<  history[i].describe() << std::endl;
                 }
             }
