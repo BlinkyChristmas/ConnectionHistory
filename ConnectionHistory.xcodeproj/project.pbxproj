@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		561D57912B9D44ED00B7E1C6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D57902B9D44ED00B7E1C6 /* main.cpp */; };
+		561D57A12B9D45A800B7E1C6 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D57972B9D45A800B7E1C6 /* buffer.cpp */; };
+		561D57A22B9D45A800B7E1C6 /* mapfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D579A2B9D45A800B7E1C6 /* mapfile.cpp */; };
+		561D57A32B9D45A800B7E1C6 /* timeutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D579D2B9D45A800B7E1C6 /* timeutil.cpp */; };
+		561D57A62B9D472300B7E1C6 /* ConnectionStatus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D57A52B9D472300B7E1C6 /* ConnectionStatus.cpp */; };
+		561D57AB2B9D474200B7E1C6 /* LogEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D57A82B9D474200B7E1C6 /* LogEntry.cpp */; };
+		561D57AC2B9D474200B7E1C6 /* LogContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 561D57A92B9D474200B7E1C6 /* LogContainer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,20 @@
 /* Begin PBXFileReference section */
 		561D578D2B9D44ED00B7E1C6 /* ConnectionHistory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConnectionHistory; sourceTree = BUILT_PRODUCTS_DIR; };
 		561D57902B9D44ED00B7E1C6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		561D57972B9D45A800B7E1C6 /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = buffer.cpp; sourceTree = "<group>"; };
+		561D57982B9D45A800B7E1C6 /* buffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = buffer.hpp; sourceTree = "<group>"; };
+		561D57992B9D45A800B7E1C6 /* dbgutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dbgutil.hpp; sourceTree = "<group>"; };
+		561D579A2B9D45A800B7E1C6 /* mapfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapfile.cpp; sourceTree = "<group>"; };
+		561D579B2B9D45A800B7E1C6 /* mapfile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapfile.hpp; sourceTree = "<group>"; };
+		561D579C2B9D45A800B7E1C6 /* strutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strutil.hpp; sourceTree = "<group>"; };
+		561D579D2B9D45A800B7E1C6 /* timeutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeutil.cpp; sourceTree = "<group>"; };
+		561D579E2B9D45A800B7E1C6 /* timeutil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timeutil.hpp; sourceTree = "<group>"; };
+		561D57A42B9D472300B7E1C6 /* ConnectionStatus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConnectionStatus.hpp; sourceTree = "<group>"; };
+		561D57A52B9D472300B7E1C6 /* ConnectionStatus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConnectionStatus.cpp; sourceTree = "<group>"; };
+		561D57A72B9D474200B7E1C6 /* LogContainer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogContainer.hpp; sourceTree = "<group>"; };
+		561D57A82B9D474200B7E1C6 /* LogEntry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogEntry.cpp; sourceTree = "<group>"; };
+		561D57A92B9D474200B7E1C6 /* LogContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogContainer.cpp; sourceTree = "<group>"; };
+		561D57AA2B9D474200B7E1C6 /* LogEntry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogEntry.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +61,7 @@
 		561D57842B9D44ED00B7E1C6 = {
 			isa = PBXGroup;
 			children = (
+				561D57A02B9D45A800B7E1C6 /* common */,
 				561D578F2B9D44ED00B7E1C6 /* ConnectionHistory */,
 				561D578E2B9D44ED00B7E1C6 /* Products */,
 			);
@@ -57,9 +78,38 @@
 		561D578F2B9D44ED00B7E1C6 /* ConnectionHistory */ = {
 			isa = PBXGroup;
 			children = (
+				561D57A92B9D474200B7E1C6 /* LogContainer.cpp */,
+				561D57A72B9D474200B7E1C6 /* LogContainer.hpp */,
+				561D57A82B9D474200B7E1C6 /* LogEntry.cpp */,
+				561D57AA2B9D474200B7E1C6 /* LogEntry.hpp */,
+				561D57A52B9D472300B7E1C6 /* ConnectionStatus.cpp */,
+				561D57A42B9D472300B7E1C6 /* ConnectionStatus.hpp */,
 				561D57902B9D44ED00B7E1C6 /* main.cpp */,
 			);
 			path = ConnectionHistory;
+			sourceTree = "<group>";
+		};
+		561D579F2B9D45A800B7E1C6 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				561D57972B9D45A800B7E1C6 /* buffer.cpp */,
+				561D57982B9D45A800B7E1C6 /* buffer.hpp */,
+				561D57992B9D45A800B7E1C6 /* dbgutil.hpp */,
+				561D579A2B9D45A800B7E1C6 /* mapfile.cpp */,
+				561D579B2B9D45A800B7E1C6 /* mapfile.hpp */,
+				561D579C2B9D45A800B7E1C6 /* strutil.hpp */,
+				561D579D2B9D45A800B7E1C6 /* timeutil.cpp */,
+				561D579E2B9D45A800B7E1C6 /* timeutil.hpp */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		561D57A02B9D45A800B7E1C6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				561D579F2B9D45A800B7E1C6 /* utility */,
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +140,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1530;
+				ORGANIZATIONNAME = "Charles Kerr";
 				TargetAttributes = {
 					561D578C2B9D44ED00B7E1C6 = {
 						CreatedOnToolsVersion = 15.3;
@@ -120,6 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				561D57912B9D44ED00B7E1C6 /* main.cpp in Sources */,
+				561D57AB2B9D474200B7E1C6 /* LogEntry.cpp in Sources */,
+				561D57A62B9D472300B7E1C6 /* ConnectionStatus.cpp in Sources */,
+				561D57A22B9D45A800B7E1C6 /* mapfile.cpp in Sources */,
+				561D57AC2B9D474200B7E1C6 /* LogContainer.cpp in Sources */,
+				561D57A32B9D45A800B7E1C6 /* timeutil.cpp in Sources */,
+				561D57A12B9D45A800B7E1C6 /* buffer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +305,10 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR,
+					$PROJECT_DIR/common,
+				);
 			};
 			name = Debug;
 		};
@@ -258,6 +319,10 @@
 				DEVELOPMENT_TEAM = CF264WE69M;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = (
+					$PROJECT_DIR,
+					$PROJECT_DIR/common,
+				);
 			};
 			name = Release;
 		};
